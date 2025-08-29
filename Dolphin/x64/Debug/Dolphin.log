@@ -1,0 +1,198 @@
+﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(531,5): warning MSB8028: The intermediate directory (x64\Debug\) contains files shared from another project (ClothSim.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  main.cpp
+C:\Dev\Dolphin\Dolphin\PerlinTexture.h(24,21): warning C4018: '<': signed/unsigned mismatch
+  (compiling source file 'main.cpp')
+  
+C:\Dev\Dolphin\Dolphin\PerlinTexture.h(25,22): warning C4018: '<': signed/unsigned mismatch
+  (compiling source file 'main.cpp')
+  
+C:\Dev\Dolphin\Dolphin\PerlinTexture.h(26,23): warning C4018: '<': signed/unsigned mismatch
+  (compiling source file 'main.cpp')
+  
+C:\Dev\Dolphin\Dolphin\PerlinTexture.h(31,21): warning C4018: '<': signed/unsigned mismatch
+  (compiling source file 'main.cpp')
+  
+C:\Dev\Dolphin\Dolphin\PerlinTexture.h(33,22): warning C4018: '<': signed/unsigned mismatch
+  (compiling source file 'main.cpp')
+  
+C:\Dev\Dolphin\Dolphin\PerlinTexture.h(107,21): warning C4018: '<': signed/unsigned mismatch
+  (compiling source file 'main.cpp')
+  
+C:\Dev\Dolphin\Dolphin\PerlinTexture.h(108,22): warning C4018: '<': signed/unsigned mismatch
+  (compiling source file 'main.cpp')
+  
+C:\Dev\Dolphin\Dolphin\PerlinTexture.h(109,23): warning C4018: '<': signed/unsigned mismatch
+  (compiling source file 'main.cpp')
+  
+C:\Dev\Dolphin\Dolphin\PerlinTexture.h(122,21): warning C4018: '<': signed/unsigned mismatch
+  (compiling source file 'main.cpp')
+  
+C:\Dev\Dolphin\Dolphin\PerlinTexture.h(125,22): warning C4018: '<': signed/unsigned mismatch
+  (compiling source file 'main.cpp')
+  
+C:\Dev\Dolphin\Dolphin\MarbleTexture.h(15,21): warning C4018: '<': signed/unsigned mismatch
+  (compiling source file 'main.cpp')
+  
+C:\Dev\Dolphin\Dolphin\MarbleTexture.h(16,22): warning C4018: '<': signed/unsigned mismatch
+  (compiling source file 'main.cpp')
+  
+C:\Dev\Dolphin\Dolphin\MarbleTexture.h(17,23): warning C4018: '<': signed/unsigned mismatch
+  (compiling source file 'main.cpp')
+  
+C:\Dev\Dolphin\Dolphin\MarbleTexture.h(25,16): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'main.cpp')
+  
+C:\Dev\Dolphin\Dolphin\MarbleTexture.h(26,18): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'main.cpp')
+  
+C:\Dev\Dolphin\Dolphin\MarbleTexture.h(27,17): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'main.cpp')
+  
+C:\Dev\Dolphin\Dolphin\MarbleTexture.h(42,21): warning C4018: '<': signed/unsigned mismatch
+  (compiling source file 'main.cpp')
+  
+C:\Dev\Dolphin\Dolphin\MarbleTexture.h(45,22): warning C4018: '<': signed/unsigned mismatch
+  (compiling source file 'main.cpp')
+  
+C:\Dev\Dolphin\Dolphin\WoodTexture.h(15,21): warning C4018: '<': signed/unsigned mismatch
+  (compiling source file 'main.cpp')
+  
+C:\Dev\Dolphin\Dolphin\WoodTexture.h(16,22): warning C4018: '<': signed/unsigned mismatch
+  (compiling source file 'main.cpp')
+  
+C:\Dev\Dolphin\Dolphin\WoodTexture.h(17,23): warning C4018: '<': signed/unsigned mismatch
+  (compiling source file 'main.cpp')
+  
+C:\Dev\Dolphin\Dolphin\WoodTexture.h(27,16): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'main.cpp')
+  
+C:\Dev\Dolphin\Dolphin\WoodTexture.h(28,18): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'main.cpp')
+  
+C:\Dev\Dolphin\Dolphin\WoodTexture.h(29,17): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'main.cpp')
+  
+C:\Dev\Dolphin\Dolphin\WoodTexture.h(44,21): warning C4018: '<': signed/unsigned mismatch
+  (compiling source file 'main.cpp')
+  
+C:\Dev\Dolphin\Dolphin\WoodTexture.h(47,22): warning C4018: '<': signed/unsigned mismatch
+  (compiling source file 'main.cpp')
+  
+C:\Dev\Dolphin\Dolphin\CellularTexture.h(35,21): warning C4018: '<': signed/unsigned mismatch
+  (compiling source file 'main.cpp')
+  
+C:\Dev\Dolphin\Dolphin\CellularTexture.h(36,22): warning C4018: '<': signed/unsigned mismatch
+  (compiling source file 'main.cpp')
+  
+C:\Dev\Dolphin\Dolphin\CellularTexture.h(37,23): warning C4018: '<': signed/unsigned mismatch
+  (compiling source file 'main.cpp')
+  
+C:\Dev\Dolphin\Dolphin\CellularTexture.h(40,24): warning C4018: '<': signed/unsigned mismatch
+  (compiling source file 'main.cpp')
+  
+C:\Dev\Dolphin\Dolphin\CellularTexture.h(52,13): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'main.cpp')
+  
+C:\Dev\Dolphin\Dolphin\CellularTexture.h(53,13): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'main.cpp')
+  
+C:\Dev\Dolphin\Dolphin\CellularTexture.h(54,21): warning C4018: '<': signed/unsigned mismatch
+  (compiling source file 'main.cpp')
+  
+C:\Dev\Dolphin\Dolphin\CellularTexture.h(55,22): warning C4018: '<': signed/unsigned mismatch
+  (compiling source file 'main.cpp')
+  
+C:\Dev\Dolphin\Dolphin\CellularTexture.h(56,23): warning C4018: '<': signed/unsigned mismatch
+  (compiling source file 'main.cpp')
+  
+C:\Dev\Dolphin\Dolphin\CellularTexture.h(59,26): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'main.cpp')
+  
+C:\Dev\Dolphin\Dolphin\CellularTexture.h(61,26): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'main.cpp')
+  
+C:\Dev\Dolphin\Dolphin\CellularTexture.h(63,21): warning C4018: '<': signed/unsigned mismatch
+  (compiling source file 'main.cpp')
+  
+C:\Dev\Dolphin\Dolphin\CellularTexture.h(64,22): warning C4018: '<': signed/unsigned mismatch
+  (compiling source file 'main.cpp')
+  
+C:\Dev\Dolphin\Dolphin\CellularTexture.h(65,23): warning C4018: '<': signed/unsigned mismatch
+  (compiling source file 'main.cpp')
+  
+C:\Dev\Dolphin\Dolphin\CellularTexture.h(73,21): warning C4018: '<': signed/unsigned mismatch
+  (compiling source file 'main.cpp')
+  
+C:\Dev\Dolphin\Dolphin\CellularTexture.h(74,22): warning C4018: '<': signed/unsigned mismatch
+  (compiling source file 'main.cpp')
+  
+C:\Dev\Dolphin\Dolphin\CellularTexture.h(75,23): warning C4018: '<': signed/unsigned mismatch
+  (compiling source file 'main.cpp')
+  
+C:\Dev\Dolphin\Dolphin\CellularTexture.h(85,21): warning C4018: '<': signed/unsigned mismatch
+  (compiling source file 'main.cpp')
+  
+C:\Dev\Dolphin\Dolphin\CellularTexture.h(87,22): warning C4018: '<': signed/unsigned mismatch
+  (compiling source file 'main.cpp')
+  
+C:\Dev\Dolphin\Dolphin\CellularTexture.h(113,21): warning C4018: '<': signed/unsigned mismatch
+  (compiling source file 'main.cpp')
+  
+C:\Dev\Dolphin\Dolphin\CellularTexture.h(114,22): warning C4018: '<': signed/unsigned mismatch
+  (compiling source file 'main.cpp')
+  
+C:\Dev\Dolphin\Dolphin\CellularTexture.h(115,23): warning C4018: '<': signed/unsigned mismatch
+  (compiling source file 'main.cpp')
+  
+C:\Dev\Dolphin\Dolphin\CellularTexture.h(142,21): warning C4018: '<': signed/unsigned mismatch
+  (compiling source file 'main.cpp')
+  
+C:\Dev\Dolphin\Dolphin\CellularTexture.h(146,21): warning C4018: '<': signed/unsigned mismatch
+  (compiling source file 'main.cpp')
+  
+C:\Dev\Dolphin\Dolphin\CellularTexture.h(149,22): warning C4018: '<': signed/unsigned mismatch
+  (compiling source file 'main.cpp')
+  
+C:\Dev\Dolphin\Dolphin\main.cpp(224,25): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Dev\Dolphin\Dolphin\main.cpp(237,45): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Dev\Dolphin\Dolphin\main.cpp(268,15): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Dev\Dolphin\Dolphin\main.cpp(314,44): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Dev\Dolphin\Dolphin\Mesh.h(94,45): warning C4267: 'argument': conversion from 'size_t' to 'GLsizei', possible loss of data
+  (compiling source file 'main.cpp')
+      C:\Dev\Dolphin\Dolphin\Mesh.h(94,45):
+      the template instantiation context (the oldest one first) is
+          C:\Dev\Dolphin\Dolphin\Mesh.h(61,28):
+          see reference to class template instantiation 'Mesh<ClothSimVertex>' being compiled
+          C:\Dev\Dolphin\Dolphin\Mesh.h(65,1):
+          while compiling class template member function 'void Mesh<ClothSimVertex>::Draw(const ShaderProgram &,const Camera &)'
+  
+C:\Dev\Dolphin\Dolphin\VAO.h(23,64): warning C4244: 'argument': conversion from 'GLsizeiptr' to 'GLsizei', possible loss of data
+  (compiling source file 'main.cpp')
+      C:\Dev\Dolphin\Dolphin\VAO.h(23,64):
+      the template instantiation context (the oldest one first) is
+          C:\Dev\Dolphin\Dolphin\Mesh.h(16,18):
+          see reference to class template instantiation 'VAO<vertexType>' being compiled
+          with
+          [
+              vertexType=Vertex
+          ]
+          C:\Dev\Dolphin\Dolphin\VAO.h(19,7):
+          while compiling class template member function 'void VAO<vertexType>::linkAttrib(VBO<vertexType> &,GLuint,GLuint,GLenum,GLsizeiptr,void *)'
+          with
+          [
+              vertexType=Vertex
+          ]
+              C:\Dev\Dolphin\Dolphin\Mesh.h(51,18):
+              see the first reference to 'VAO<vertexType>::linkAttrib' in 'Mesh<Vertex>::CreateGLState'
+          with
+          [
+              vertexType=Vertex
+          ]
+              C:\Dev\Dolphin\Dolphin\Mesh.h(33,15):
+              see the first reference to 'Mesh<Vertex>::CreateGLState' in 'Mesh<Vertex>::Mesh'
+              C:\Dev\Dolphin\Dolphin\Floor.h(35,10):
+              see the first reference to 'Mesh<Vertex>::Mesh' in 'Floor::Floor'
+  
+  Dolphin.vcxproj -> C:\Dev\Dolphin\x64\Debug\Dolphin.exe
+  'pwsh.exe' is not recognized as an internal or external command,
+  operable program or batch file.

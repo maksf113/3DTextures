@@ -4,11 +4,11 @@
 class Skybox
 {
 private:
-	GLuint VAO;
-	GLuint VBO;
-	GLuint EBO;
-	GLuint cubemapTexture;
-	GLuint textureUnit;
+	GLuint m_vao;
+	GLuint m_vbo;
+	GLuint m_ebo;
+	GLuint m_cubemapTexture;
+	GLuint m_textureUnit;
 	float Vertices[24] =
 	{
 		//   Coordinates
@@ -44,15 +44,15 @@ private:
 		6, 2, 3
 	};
 public:
-	Skybox(const char* path, GLuint slot) : textureUnit(slot)
+	Skybox(const char* path, GLuint slot) : m_textureUnit(slot)
 	{
-		glGenVertexArrays(1, &VAO);
-		glGenBuffers(1, &VBO);
-		glGenBuffers(1, &EBO);
-		glBindVertexArray(VAO);
-		glBindBuffer(GL_ARRAY_BUFFER, VBO);
+		glGenVertexArrays(1, &m_vao);
+		glGenBuffers(1, &m_vbo);
+		glGenBuffers(1, &m_ebo);
+		glBindVertexArray(m_vao);
+		glBindBuffer(GL_ARRAY_BUFFER, m_vbo);
 		glBufferData(GL_ARRAY_BUFFER, sizeof(Vertices), &Vertices, GL_STATIC_DRAW);
-		glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, EBO);
+		glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, m_ebo);
 		glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(Indices), &Indices, GL_STATIC_DRAW);
 		glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(float), (void*)0);
 		glEnableVertexAttribArray(0);
@@ -70,8 +70,8 @@ public:
 			std::string(path) + "/back1.png"
 		};
 
-		glGenTextures(1, &cubemapTexture);
-		glBindTexture(GL_TEXTURE_CUBE_MAP, cubemapTexture);
+		glGenTextures(1, &m_cubemapTexture);
+		glBindTexture(GL_TEXTURE_CUBE_MAP, m_cubemapTexture);
 		glTexParameteri(GL_TEXTURE_CUBE_MAP, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
 		glTexParameteri(GL_TEXTURE_CUBE_MAP, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
 		glTexParameteri(GL_TEXTURE_CUBE_MAP, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_EDGE);
@@ -82,8 +82,6 @@ public:
 		{
 			int Width, Height, numColCh;
 			stbi_set_flip_vertically_on_load(false);
-			//if(i == 5)
-			//	stbi_set_flip_vertically_on_load(true);
 			unsigned char* data = stbi_load(facesCubemap[i].c_str(), &Width, &Height, &numColCh, 0);
 			GLenum format;
 			if (numColCh == 1)
@@ -117,24 +115,20 @@ public:
 		shader.Activate();
 		glm::mat4 view = glm::mat4(1.0f);
 		glm::mat4 projection = glm::mat4(1.0f);
-		// We make the mat4 into a mat3 and then a mat4 again in order to get rid of the last row and column
-		// The last row and column affect the translation of the skybox 
-		//view = glm::mat4(glm::mat3(glm::lookAt(camera.GetPosition(), camera.GetPosition() + camera.GetDirection(), camera.GetUp())));
 		view = glm::mat4(glm::mat3(camera.GetView()));
-		//projection = glm::perspective(glm::radians(camera.GetFOVdeg()), (float)camera.GetWidth() / camera.GetHeight(), camera.GetNearPlane(), camera.GetFarPlane());
 		projection = camera.GetProjection();
 		shader.setMat4("view", view);
 		shader.setMat4("projection", projection);
-		shader.setInt("skybox", textureUnit);
-		glActiveTexture(GL_TEXTURE0 + textureUnit);
+		shader.setInt("skybox", m_textureUnit);
+		glActiveTexture(GL_TEXTURE0 + m_textureUnit);
 		glDisable(GL_DEPTH_TEST);
-		glBindVertexArray(VAO);
-		glBindTexture(GL_TEXTURE_CUBE_MAP, cubemapTexture);
+		glBindVertexArray(m_vao);
+		glBindTexture(GL_TEXTURE_CUBE_MAP, m_cubemapTexture);
 		glDrawElements(GL_TRIANGLES, 36, GL_UNSIGNED_INT, 0);
 		glBindVertexArray(0);
 		glEnable(GL_DEPTH_TEST);
 	}
 
-	const GLuint GetTexID() const { return cubemapTexture; }
-	const GLuint GetTexUnit() const { return textureUnit; }
+	const GLuint GetTexID() const { return m_cubemapTexture; }
+	const GLuint GetTexUnit() const { return m_textureUnit; }
 };

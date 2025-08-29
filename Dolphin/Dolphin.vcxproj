@@ -140,7 +140,6 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Camera.h" />
-    <ClInclude Include="CellularHash.h" />
     <ClInclude Include="CellularTexture.h" />
     <ClInclude Include="Cubemap.h" />
     <ClInclude Include="EBO.h" />

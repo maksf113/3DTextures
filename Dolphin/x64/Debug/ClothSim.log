@@ -1,0 +1,32 @@
+﻿  Cloth.cpp
+C:\OpenGL\Openglyt\ClothSim\ClothSim\Cloth.cpp(27,19): warning C4018: '<': signed/unsigned mismatch
+C:\OpenGL\Openglyt\ClothSim\ClothSim\Cloth.cpp(28,21): warning C4018: '<': signed/unsigned mismatch
+C:\OpenGL\Openglyt\ClothSim\ClothSim\Cloth.cpp(43,20): warning C4018: '<': signed/unsigned mismatch
+C:\OpenGL\Openglyt\ClothSim\ClothSim\Cloth.cpp(44,21): warning C4018: '<': signed/unsigned mismatch
+C:\OpenGL\Openglyt\ClothSim\ClothSim\Cloth.cpp(80,45): warning C4267: 'argument': conversion from 'size_t' to 'GLsizei', possible loss of data
+C:\OpenGL\Openglyt\ClothSim\ClothSim\VAO.h(23,64): warning C4244: 'argument': conversion from 'GLsizeiptr' to 'GLsizei', possible loss of data
+C:\OpenGL\Openglyt\ClothSim\ClothSim\VAO.h(19,7): message : while compiling class template member function 'void VAO<glm::vec4>::linkAttrib(VBO<vertexType> &,GLuint,GLuint,GLenum,GLsizeiptr,void *)'
+          with
+          [
+              vertexType=glm::vec4
+          ]
+C:\OpenGL\Openglyt\ClothSim\ClothSim\Cloth.h(64,29): message : see the first reference to 'VAO<glm::vec4>::linkAttrib' in 'Cloth::SetVAOs'
+C:\OpenGL\Openglyt\ClothSim\ClothSim\Cloth.h(25,17): message : see reference to class template instantiation 'VAO<glm::vec4>' being compiled
+C:\OpenGL\Openglyt\ClothSim\ClothSim\Mesh.h(94,45): warning C4267: 'argument': conversion from 'size_t' to 'GLsizei', possible loss of data
+C:\OpenGL\Openglyt\ClothSim\ClothSim\Mesh.h(65,1): message : while compiling class template member function 'void Mesh<ClothSimVertex>::Draw(const ShaderProgram &,const Camera &)'
+C:\OpenGL\Openglyt\ClothSim\ClothSim\Mesh.h(61,41): message : see reference to class template instantiation 'Mesh<ClothSimVertex>' being compiled
+  main.cpp
+C:\OpenGL\Openglyt\ClothSim\ClothSim\main.cpp(102,25): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\OpenGL\Openglyt\ClothSim\ClothSim\VAO.h(23,64): warning C4244: 'argument': conversion from 'GLsizeiptr' to 'GLsizei', possible loss of data
+C:\OpenGL\Openglyt\ClothSim\ClothSim\VAO.h(19,7): message : while compiling class template member function 'void VAO<glm::vec4>::linkAttrib(VBO<vertexType> &,GLuint,GLuint,GLenum,GLsizeiptr,void *)'
+          with
+          [
+              vertexType=glm::vec4
+          ]
+C:\OpenGL\Openglyt\ClothSim\ClothSim\Cloth.h(64,29): message : see the first reference to 'VAO<glm::vec4>::linkAttrib' in 'Cloth::SetVAOs'
+C:\OpenGL\Openglyt\ClothSim\ClothSim\Cloth.h(25,17): message : see reference to class template instantiation 'VAO<glm::vec4>' being compiled
+C:\OpenGL\Openglyt\ClothSim\ClothSim\Mesh.h(94,45): warning C4267: 'argument': conversion from 'size_t' to 'GLsizei', possible loss of data
+C:\OpenGL\Openglyt\ClothSim\ClothSim\Mesh.h(65,1): message : while compiling class template member function 'void Mesh<ClothSimVertex>::Draw(const ShaderProgram &,const Camera &)'
+C:\OpenGL\Openglyt\ClothSim\ClothSim\Mesh.h(61,41): message : see reference to class template instantiation 'Mesh<ClothSimVertex>' being compiled
+  Generating Code...
+  ClothSim.vcxproj -> C:\OpenGL\Openglyt\ClothSim\x64\Debug\ClothSim.exe

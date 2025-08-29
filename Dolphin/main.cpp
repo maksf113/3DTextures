@@ -2,17 +2,16 @@
 #include "FBO.h"
 #include "Floor.h"
 #include "Skybox.h"
-#include"PerlinTexture.h"
+#include "PerlinTexture.h"
 #include "MarbleTexture.h"
 #include "WoodTexture.h"
-//#include "CellularTexture.h"
-#include "CellularHash.h"
+#include "CellularTexture.h"
 #include "Cubemap.h"
 #include <random>
 
 
-GLuint width = 1920 * 1;
-GLuint height = 1080 * 1;
+GLuint width = 1440;
+GLuint height = 810;
 float prevTime = 0.0f;
 float crntTime = 0.0f;
 float dt = 0.0f;
@@ -169,7 +168,6 @@ int main(void)
 	glm::vec3 position = glm::vec3(model[modelNumber - 2][3][0], 
 		model[modelNumber - 2][3][1], model[modelNumber - 2][3][2]);
 	Cubemap cubemap(GL_COLOR_ATTACHMENT0, cubemapSize, position);
-	Camera cubemapCamera(cubemapSize, cubemapSize, position); // position of bPackModel
 	cubemap.GenRBO();
 	cubemap.Bind();
 	glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
@@ -177,24 +175,15 @@ int main(void)
 	glClear(GL_DEPTH_BUFFER_BIT);
 	for (int i = 0; i < 6; i++)
 	{
-		cubemap.SetFaceToDraw(cubemapCamera, i);
-		//cubemap.SetFaceToDraw(i);
+		cubemap.SetFaceToDraw(i);
 
 		glDisable(GL_DEPTH_TEST);
 		skyboxShader.Activate();
-		skybox.Draw(skyboxShader, cubemapCamera);
-		//skybox.Draw(skyboxShader, cubemap.GetCamera());
+		skybox.Draw(skyboxShader, cubemap.GetCamera());
 		glClear(GL_DEPTH_BUFFER_BIT);
 		glEnable(GL_DEPTH_TEST);
 		glDepthFunc(GL_LESS);
-		/*
-		shader.Activate();
-		shader.setVec3("camDir", camera.GetDirection()); // for flashlight
-		shader.setMat4("model", floorModel);
-		shader.setBool("flashLight", camera.GetFlashlight());
-		//floor.Draw(shader, cubemap.GetCamera());
-		floor.Draw(shader, cubemapCamera);
-		*/
+
 		shader.Activate();
 		shader.setVec3("camDir", camera.GetDirection());
 		shader.setMat4("model", floorModel);
@@ -203,7 +192,7 @@ int main(void)
 		shader.setInt("shadowMap", 2);
 		glActiveTexture(GL_TEXTURE2);
 		shadowFBO.BindTex2D();
-		floor.Draw(shader, cubemapCamera);
+		floor.Draw(shader, cubemap.GetCamera());
 		shader3D.Activate();
 		shader3D.setMat4("camMatrix", camera.GetMatrix());
 		shader3D.setInt("tex3D", 2);
@@ -222,7 +211,7 @@ int main(void)
 			shader3D.setMat3("transposeInverse", transposeInverse);
 			shader3D.setMat4("model", model[i]);
 			shader3D.setFloat("shininess", shininess[i]);
-			dolphin.Draw(shader3D, cubemapCamera);
+			dolphin.Draw(shader3D, cubemap.GetCamera());
 			GLcheckError();
 		}
 	}
@@ -234,19 +223,6 @@ int main(void)
 		prevTime = crntTime;
 		crntTime = glfwGetTime();
 		dt = crntTime - prevTime;
-		/*
-		counter++;
-		if (dt >= 1.0 / 30.0)
-		{ 
-			std::string FPS = std::to_string(1.0 / dt * counter);
-			std::string ms = std::to_string(dt / counter * 1000);
-			std::string newTitle = "Project 8 - " + FPS + "FPS / " + ms + "ms";
-			glfwSetWindowTitle(window, newTitle.c_str());
-			counter = 0;
-			prevTime = crntTime;
-		}
-		*/
-		// CUBEMAP
 
 		// SHADOW
 		shadowFBO.Bind();
