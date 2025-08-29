@@ -20,13 +20,9 @@ This project is an exploration of procedurally generated 3D textures using OpenG
 Here are some screenshots from the project:
 
 ![Screenshot of Procedural Textures 1](screenshots/1.png)
-*A showcase of different procedural textures applied to the dolphin models.*
 
 ![Screenshot of Procedural Textures 2](screenshots/2.png)
-*Another view of the scene, highlighting the shadows and textures.*
 
 ![Screenshot of Procedural Textures 3](screenshots/3.png)
-*A closer look at the models and their textures.*
 
 ![Screenshot of Procedural Textures 4](screenshots/4.png)
-*A view from a different angle, showing more of the environment.*
